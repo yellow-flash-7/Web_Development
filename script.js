@@ -7,3 +7,15 @@ function data(){
         document.getElementById("output").textContent = "Name: " + name + ", Age: " + age;
     }
 }
+async function getStudents() {
+    try {
+        const response = await fetch("/api/students");
+        const students = await response.json();
+
+        console.log(students);
+    } catch (error) {
+        console.log("Error:", error);
+    }
+}
+
+getStudents();
