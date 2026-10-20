@@ -19,3 +19,8 @@ async function getStudents() {
 }
 
 getStudents();
+
+function Fuc(){
+    let yes = document.getElementById("yes").value;
+    let no = document.getElementById("no").value;
+}
